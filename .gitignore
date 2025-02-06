@@ -1,0 +1,102 @@
+# .NET Core
+bin/
+obj/
+out/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# User-specific files
+.vscode/
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer log files
+*.log
+
+# ASP.NET temporary files
+wwwroot/_tmp/
+
+# Tye files
+.tye/
+
+# JetBrains Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# DotCover
+.idea/.idea.DotCover
+
+# ASP.NET Core Development Certificate
+/dev-cert.pfx
+
+# User-specific files from Visual Studio
+.vs2019/
+.vs2017/
+
+# Other Visual Studio files
+.vs/
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+# Linux Swap files
+.swp
+
+# JetBrains Rider
+.idea/
+
+# npm packages
+node_modules/
+
+# Azure functions
+.local/
+
+# Entity Framework
+migrations/
+
+# Build output
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Ignore Bootstrap and jQuery local libraries
+wwwroot/lib/
+wwwroot/css/
+wwwroot/js/
+
+# Ignore any custom local files/folders for Bootstrap or jQuery
+wwwroot/bootstrap/
+wwwroot/jquery/
