@@ -41,3 +41,15 @@ CREATE TABLE GroupMembers (
     FOREIGN KEY (GroupId) REFERENCES Groups(Id) ON DELETE CASCADE,
     CONSTRAINT unique_user_group UNIQUE (UserId, GroupId)
 );
+
+CREATE TABLE Messages (
+    Id SERIAL PRIMARY KEY,
+    SenderId INT NOT NULL,
+    GroupId INT NULL,
+    ReceiverId INT NULL, -- Yeni eklenen alan (Birebir mesajlaşma için)
+    Text TEXT NOT NULL DEFAULT '',
+    CreatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (SenderId) REFERENCES Users(Id),
+    FOREIGN KEY (ReceiverId) REFERENCES Users(Id), -- Yeni eklenen foreign key
+    FOREIGN KEY (GroupId) REFERENCES Groups(Id)
+);
