@@ -1,0 +1,26 @@
+@page
+@model ChatApplication.Pages.GroupPageModel
+
+@{
+    ViewData["Title"] = "Your Groups";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h3>Your Groups</h3>
+<p>Toplam Grup Sayısı: @Model.Groups.Count</p>
+
+
+<ul>
+@foreach (var group in Model.Groups)
+{
+    <li><a asp-page="/ChatPage" asp-route-groupId="@group.Id">@group.GroupName</a></li>
+}
+</ul>
+
+<h3>Create New Group</h3>
+<form method="post" asp-page-handler="CreateGroup">
+    <input type="text" asp-for="GroupName" placeholder="Group Name" required />
+    <button type="submit">Create</button>
+</form>
+
